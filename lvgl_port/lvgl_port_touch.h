@@ -1,4 +1,4 @@
-//启用lvgl_port_touch
+//启用LVGL触摸移植
 #if 1
 #ifndef LVGL_PORT_TOUCH_H
 #define LVGL_PORT_TOUCH_H

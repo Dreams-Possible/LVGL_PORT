@@ -1,4 +1,4 @@
-//启用lvgl_port_display
+//启用LVGL显示移植
 #if 1
 #ifndef LVGL_PORT_DISPLAY_H
 #define LVGL_PORT_DISPLAY_H

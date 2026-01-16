@@ -1,5 +1,5 @@
 #include"lvgl_port_touch.h"
-//启用lvgl_port_touch
+//启用LVGL触摸移植
 #ifdef LVGL_PORT_TOUCH_H
 
 //读取触摸数据

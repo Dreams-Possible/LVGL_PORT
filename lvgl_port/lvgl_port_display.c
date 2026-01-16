@@ -1,5 +1,5 @@
 #include"lvgl_port_display.h"
-//启用lvgl_port_display
+//启用LVGL显示移植
 #ifdef LVGL_PORT_DISPLAY_H
 
 //配置
