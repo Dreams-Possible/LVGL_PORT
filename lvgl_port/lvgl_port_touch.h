@@ -5,7 +5,6 @@
 
 //头文件
 #include"lvgl/lvgl.h"
-//#include"touch_driver.h"
 
 //LVGL移植触摸初始化
 void lvgl_port_touch_init();

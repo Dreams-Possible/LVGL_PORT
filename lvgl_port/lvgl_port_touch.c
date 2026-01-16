@@ -1,4 +1,6 @@
 #include"lvgl_port_touch.h"
+//#include"touch_driver.h"
+
 //启用LVGL触摸移植
 #ifdef LVGL_PORT_TOUCH_H
 
