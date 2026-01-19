@@ -16,6 +16,8 @@ uint8_t lvgl_port_display_init();
 //屏幕刷新
 static void flash(lv_display_t*display,const lv_area_t*area,uint8_t*color)
 {
+    //调整（通常为小端序SPI设备开启）
+    // lv_draw_sw_rgb565_swap(color, (area->x2 - area->x1 + 1)*(area->y2 - area->y1 + 1));
     //屏幕刷新函数
     //screen_flash(area->x1,area->y1,area->x2,area->y2,(uint16_t*)color);
     //屏幕刷新完成
