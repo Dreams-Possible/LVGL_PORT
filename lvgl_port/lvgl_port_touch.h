@@ -7,7 +7,7 @@
 #include"lvgl/lvgl.h"
 
 //LVGL移植触摸初始化
-void lvgl_port_touch_init();
+uint8_t lvgl_port_touch_init();
 
 #endif//#ifndef LVGL_PORT_TOUCH_H
 #endif//#if 1

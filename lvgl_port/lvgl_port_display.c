@@ -30,6 +30,10 @@ uint8_t lvgl_port_display_init()
 {
     //创建显示器
     lv_display_t*display=lv_display_create(LVGL_PORT_DISPLAY_HOR,LVGL_PORT_DISPLAY_VER);
+    if(!display)
+    {
+        return 1;
+    }
     //设置显示刷新回调函数
     lv_display_set_flush_cb(display,flash);
     //申请缓冲帧（这里使用双缓冲）
