@@ -9,12 +9,12 @@
 #define LVGL_PORT_DISPLAY_VER 480
 
 //屏幕刷新
-static void flash(lv_display_t*display,const lv_area_t*area,uint8_t*color);
+static void flash(lv_display_t*display,const lv_area_t*area,void*color);
 //LVGL移植显示初始化
 uint8_t lvgl_port_display_init();
 
 //屏幕刷新
-static void flash(lv_display_t*display,const lv_area_t*area,uint8_t*color)
+static void flash(lv_display_t*display,const lv_area_t*area,void*color)
 {
     //调整（通常为小端序SPI设备开启）
     // lv_draw_sw_rgb565_swap(color, (area->x2 - area->x1 + 1)*(area->y2 - area->y1 + 1));
