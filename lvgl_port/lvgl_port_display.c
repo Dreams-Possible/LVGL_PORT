@@ -44,7 +44,6 @@ uint8_t lvgl_port_display_init()
     {
         //设置缓冲帧
         lv_display_set_buffers(display,buffer_1,buffer_2,LVGL_PORT_DISPLAY_HOR*LVGL_PORT_DISPLAY_VER/4*sizeof(uint16_t),LV_DISPLAY_RENDER_MODE_PARTIAL);
-        return 0;
     }
     else
     {
@@ -58,6 +57,7 @@ uint8_t lvgl_port_display_init()
         }
         return 1;
     }
+    return 0;
 }
 
 #endif//#ifdef LVGL_PORT_DISPLAY_H
